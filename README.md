@@ -97,4 +97,18 @@ $ docker-compose -f docker-compose-sample.services.yml up
 
 You now should be able to browse to https://server1.test and https://server2.test
 
+## Acknowledgements
 
+This guide couldn't have been possible without these excellent tools:
+
+- [nginx-proxy](https://github.com/jwilder/nginx-proxy)
+- [mkcert](https://github.com/FiloSottile/mkcert)
+
+And the following articles and resources were of great help in figuring all of this out:
+
+- https://medium.com/@francoisromain/set-a-local-web-development-environment-with-custom-urls-and-https-3fbe91d2eaf0
+- https://medium.com/@dvhtn/reverse-proxying-to-docker-on-os-x-el-capitan-d48bed322398
+- https://medium.com/@sumankpaul/use-nginx-proxy-and-dnsmasq-for-user-friendly-urls-during-local-development-a2ffebd8b05d
+- https://gist.github.com/jed/6147872
+
+Thanks!
