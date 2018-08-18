@@ -6,7 +6,8 @@ The proxy supports HTTPS through self-signed certificates, which are added to
 the trust store, so browsers will trust them.
 
 Custom domain names are supported and resolve automatically to the reverse proxy 
-by using `dnsmasq`.
+by using `dnsmasq`. We will use the `.test` tld for our custom domain names, so 
+they don't clash with any current and future tlds.
 
 This guide has only been tested on OS X. The tools used below are also available 
 on Linux, so theoretically this guide should work on Linux too, with some minor 
