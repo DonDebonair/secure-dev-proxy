@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+PROXY_ROOT="$(dirname "$(dirname "$(realpath "${BASH_SOURCE[0]}")")")"
+CERT_DIR=$PROXY_ROOT/certs
+cd $CERT_DIR
+mkcert $1
+mv "$1.pem" "$1.crt"
+mv "$1-key.pem" "$1.key"
+echo "Certificate and key created: $1.crt $1.key"

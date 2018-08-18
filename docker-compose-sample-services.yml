@@ -1,0 +1,15 @@
+version: '3'
+services:
+  server1:
+    image: httpd:alpine
+    environment:
+      - VIRTUAL_HOST=server1.test
+  server2:
+    image: httpd:alpine
+    environment:
+      - VIRTUAL_HOST=server2.test
+
+networks:
+  default:
+    external:
+      name: proxy
